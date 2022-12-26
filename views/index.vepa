@@ -1,0 +1,610 @@
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+<div class="welcome-area" id="welcome">
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <h1><strong>Finansal Uygulamalar</strong></h1>
+                    <p>Bireysel, kurumsal ve özel bankacılık alanlarını kapsayan entegre ve performanslı temel
+                        bankacılık yazılımları geliştiriyoruz.</p>
+                    <a href="#urunler" class="main-button-slider">Daha Fazlasını Keşfet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="section home-feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                        data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img src="assets/img/customer.png" alt=""></i>
+                            </div>
+                            <h5 class="features-title">Müşteri Analizi Uygulaması</h5>
+                            <p>Müşteri Analizi Uygulaması, müşteri risk ve kredi puanının izlendiği, anlık likidite
+                                durumunun takip edildiği, fırsat, tehdit ve uyarı takibinin yapılabildiği finansal
+                                uygulama platformudur.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                        data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img src="assets/img/portfolio.png" alt=""></i>
+                            </div>
+                            <h5 class="features-title">Portföy Analizi Uygulaması</h5>
+                            <p>Portföy Analizi Uygulaması, portföye bağlı müşterilerin, şubelerin, portföy
+                                yöneticilerinin yönetilebildiği ve performanslarının takip edebilebildiği finansal
+                                uygulama platformudur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                        data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img src="assets/img/performance.png" alt=""></i>
+                            </div>
+                            <h5 class="features-title">Performans </h5>
+                            <p>Oracle, MSSQL ve NOSQL veritabanı optimizasyonu, Web, mobil ve masaüstü uygulamalarında
+                                performans iyileştirme, ön bellekleme, ara katman
+                                optimizasyonu üzerine çalışıyoruz. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-top-70 padding-bottom-0" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Hakkımızda</h2>
+                </div>
+                <div class="left-text">
+                    <p>Çalışma hayatınızda hedeflediğinize ulaşabilmeniz için 30 yıllık yazılım geliştirme bilgi ve
+                        tecrübelerimize yeni teknolojileri de katarak, rakiplerinizden daima bir adım önde olmanız
+                        için tüm deneyimlerimizi sunarız.
+                        Yaptığımız geliştirmelerde kurumsal ve büyük müşterilerimize, ihtiyaca yönelik en doğru ve
+                        kaliteli hizmeti vermeyi, ARGE projelerimiz ile ülkemize, topluma ve kendimize değer katmayı
+                        hedefleyen hızlı ve hevesli bir yazılım firmasıyız.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Vizyonumuz</h2>
+                </div>
+                <div class="left-text">
+                    <p>
+                        Ulusal Hedefler
+                        Uluslararası platformda sektörün en önde gelen inovasyon ve teknoloji firması olmak, yapay
+                        zekayı sektörel kazanımlar ile birleştirerek sektörde güçlü bir etki yaratmak.</p>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/img/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mini" id="work-process">
+    <div class="mini-content">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="info">
+                        <h1>Hizmetlerimiz</h1>
+                        <p>Profesyonel kadrosuyla müşterilerin ihtiyaçları ve beklentileri
+                            doğrultusunda yaratıcı ve yenilikçi projeler üreterek sizlere hizmet veriyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="mini-box">
+                        <i><img src="assets/img/ma.png" alt="" style="width: 32px;"></i>
+                        <strong>Mobil Uygulamalar</strong>
+                        <span class="cut-text">Vepatek olarak Web, CMS, E- Ticaret, Pazaryeri Asistanı ve
+                            diğer iş uygulamalarını geliştirip, mobil cihaz ve telefonlar aracılığı ile işinizi
+                            yönetmenizi, anlık raporlama yapmanızı ve veri girişini sağlıyoruz.</span>
+                        <input class="expand-btn" type="checkbox">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="mini-box">
+                        <i><img src="assets/img/wa.png" alt="" style="width: 32px;"></i>
+                        <strong>Web Uygulamalar</strong>
+                        <span class="cut-text">Ön yüzde HTML, CSS, Javascript, Jquery, BootStrap ve UIKit gibi
+                            güvenilir ve bilinen teknolojiler ile sunucu tarafında Node.js alt yapısında express,
+                            handlebars, multer, ve bir çok kütüphaneyi birleştirerek esnek ve verimli web
+                            uygulamaları tasarlıyoruz.</span>
+                        <input class="expand-btn" type="checkbox">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="mini-box">
+                        <i><img src="assets/img/d.png" alt="" style="width: 32px;"></i>
+                        <strong>Danışmanlık</strong>
+                        <span class="cut-text">Yazılım alanında profesyonel danışmanlık sağlıyoruz.</span>
+                        <input class="expand-btn" type="checkbox">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div href="#" class="mini-box">
+                        <i><img src="assets/img/bc.png" alt="" style="width: 32px;"></i>
+                        <strong>Güvenlik & Şifreleme</strong>
+                        <span class="cut-text">Simetrik Anahtar Şifresi, Asimetrik Şifreleme, Public-key cryptography,
+                            AES, RSA, Hash
+                            Algoritmaları, Proxy Re-Encryption ve özel çözümleri sizlere sunuyoruz.</span>
+                        <input class="expand-btn" type="checkbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">Referanslarımız</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Müşterilerimiz birçok farklı sektörden olup, birçoğu referansla bize ulaşmıştır.
+                        Bunun, yaptığımız çalışmaların kalitesinin ve müşterilerimizle verimli bir iş ilişkisi kurmaya
+                        verdiğimiz önemin bir göstergesi olduğunu düşünüyoruz.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="team-item">
+                    <div class="team-content">
+                        <p></p>
+                        <div class="user-image">
+                            <img src="assets/img/bmc.png" alt="">
+                        </div>
+                        <div class="team-info">
+                            <span>BMC Power A.Ş. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="team-item">
+                    <div class="team-content">
+                        <p></p>
+                        <div class="user-image">
+                            <img src="assets/img/zk.png" alt="">
+                        </div>
+                        <div class="team-info">
+                            <span>Ziraat Katılım</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="team-item">
+                    <div class="team-content">
+                        <p></p>
+                        <div class="user-image">
+                            <img src="assets/img/bilgin.png" alt="">
+                        </div>
+                        <div class="team-info">
+                            <span>Bilgin Okulları</span>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+        </div>
+    </div>
+</section>
+
+<section class="section colored" id="pricing-plans">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">Nasıl Çalışıyoruz</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Müşterilerimizin ihtiyaçlarını dinliyor ve bu ihtiyaçları, özel yazılım araçlarımız ile analiz
+                        ediyoruz.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/analiz.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">Analiz ve Planlama</h5>
+                    <p class="cut-text2">Sorununuzu sizinle birlikte analiz edip geliştirilecek uygulamanın hangi
+                        platform ve
+                        teknolojilerde olacağının kararını maliyet, esneklik ve hız olarak veriyoruz.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/gelistirme.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">Geliştirme</h5>
+                    <p class="cut-text2">Kararı verilen teknolojiler üzerinde ilgili uygulamayı ekran ve modüller
+                        halinde geliştirme
+                        aşamasını ifade eder.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/test.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">Test</h5>
+                    <p class="cut-text2">Geliştirilen uygulamanın ekranlarının görsel ve işlevsel testini, müşteri kabul
+                        testini ve modül
+                        yeterlilik testini ifade eder.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/bakim.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">Bakım Destek</h5>
+                    <p class="cut-text2">Geliştirmesi ve testi tamamlanmış uygulamanın kullanımında ortaya çıkan hata,
+                        düzeltme isteği
+                        diğer teknik unsurları giderme ve sağlık bir yaşam döngüsünü desteklemeyi ifade eder.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/uiux.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">UI & UX</h5>
+                    <p class="cut-text2">Geliştirilen uygulamanırın görsel olarak yeterli ve kullanıcı deneyimi
+                        açısından kabul gören
+                        sınırlar içerisinde olması, kullanım kolaylığı ve erişilebilir yapıları ifade eder.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                <div class="features-small-item">
+                    <div class="icon">
+                        <i><img src="assets/img/seo.png" alt=""></i>
+                    </div>
+                    <h5 class="features-title">SEO</h5>
+                    <p class="cut-text2">Markanızın veya web sayfanızın bilinirliğini arttırmak için yapılan
+                        çalışmalardır.</p>
+                    <input class="expand-btn2" type="checkbox">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="counter" id="urunler">
+    <div class="header-text-pa">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <h1 class="pa-h1"><strong>Portföy Analizi Uygulaması</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-top-70 padding-bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/pau1.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-text">
+                    <p>Portföye bağlı müşterileri, şubeleri, portföy yöneticilerini yönetebilir; performanslarını bu
+                        sistemden takip edebilirsiniz. İstenirse bağımsız, istenirse ana bankacılık uygulaması ile
+                        çalışabilir. Mobil uyumlu yapısı ile tablet ekranlarında da çalışabilir. Portföy yönetimi ve
+                        analizi yapılabilen kullanıcı dostu, performanslı ve modern ara yüzler sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Bakış Açısını Genişletmek</h2>
+                </div>
+                <div class="left-text">
+                    <p>Bakış açınızı genişletmek için operasyon, portföy, yönetici gibi farklı perspektifler
+                        geliştirdik.</p>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/img/bag.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-top-70 padding-bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/odk.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Odaklanma</h2>
+                </div>
+                <div class="left-text">
+                    <p>Akıllı yönlendirmeler ve odaklamalar ile uygulamaya performans artışı ve verimlilik
+                        kazandırılmıştır. Aynı zamanda tasarlanan ekranlarda kartların bütün detaylarının istek
+                        doğrultusunda değiştirilebilmesi, ilgili karta başarı, uyarı ve dikkat bildimleri
+                        yerleştirilmesi odaklama alanındaki verimliliği arttırmak adına çok önemli bir rol üstleniyor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Kullanım Kolaylığı</h2>
+                </div>
+                <div class="left-text">
+                    <p>Altyapısı ve kullanıcı deneyimlerine göre hazırlanmış tasarımları ile pratik ve kolay kullanım
+                        sağlıyoruz.</p>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/img/kk.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-top-70 padding-bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/p.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Performans</h2>
+                </div>
+                <div class="left-text">
+                    <p>Sunucu altyapısı, hibrit çalışma şekli ve veri tabanı yapısı ile bilgiye ulaşma hızını arttırmayı
+                        hedefledik. <br>
+                        <strong>Sunucu Altyapısı</strong><br>
+                        Lisans gerektirmeyen güvenilir yapısı nedeni ile Linux sunucular kullanıldı. Bu sayede yatayda
+                        büyüyebilme özelliği sağlandı. Bunun yanı sıra sunucular container haline getirilebilir ve
+                        Kubernates ile yönetilebilir. <br>
+                        <strong>Hibrit Yapı</strong> <br>
+                        Canlı çalışsan sistemleri etkilememek adına; Clon veri tabanından gece veriler hesaplanıp,
+                        portföy - şube ve başkanlık bilgileri de eklenerek ilgili tablolara aktarılır ve aktarılan
+                        veriler özet tabloları oluşturur. Gün içinde de canlı değişim verileri yakalanıp ayrı tablolarda
+                        tutuluyor. Değişim ise özet tablolara yansıtılıyor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="counter">
+    <div class="header-text-pa">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <h1 class="pa-h1"><strong>Müşteri Analizi Uygulaması</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-top-70 padding-bottom-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/mau1.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-text">
+                    <p>Müşterimizin tüm bilgilerine tek bir ekran üzerinden ulaşmayı sağlayan Katılım Müşterim,
+                        mevcutta farklı ekranlardan görülebilen pek çok bilgiyi bünyesinde toplamaktadır. Müşterimiz
+                        hakkındaki karar süreçlerini etkileyebilecek tüm verilerin bir arada sunulması hem Şube
+                        çalışanlarımızın müşterimize sunacakları hizmetlerin kalitesini ve yönünü belirlemekte hem de
+                        Genel Müdürlük çalışanlarımızın hızlı ve doğru sonuçlara ulaşmalarına yardımcı olmaktadır.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-text">
+                    <p>Katılım Müşterim, platform ve işletim sisteminden bağımsız olarak her cihazda çalışabilecek
+                        şekilde tasarlanmıştır. Hem masaüstü bilgisayarlarda hem de cep telefonu ve tabletlerde rahat
+                        kullanılabilmesi için menü yapıları uluslararası standartlara uygun olarak hazırlanmıştır. Ekran
+                        boyutuna uygun olarak duyarlı bir tasarım göstermekte ve farklı ekran boyutlarında da kullanım
+                        kolaylığı sağlamaktadır.</p>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/img/mau2.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section colored" id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">Bizimle İletişime Geç</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Vepatek ile birlikte gelişin!
+                        Teknolojiyi beraber yorumlayalım.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="margin-bottom-30">Adres &amp; İletişim Bilgileri</h5>
+                <div class="contact-text">
+                    <p>Cevizli Mahallesi Mustafa Kemal Caddesi Hukukcular Towers
+                        <br> A Blok No:66 Kat:5 D:35 PK:34865
+                        <br> Kartal - IST
+                    </p>
+                    <p>Telefon: +90 216 709 10 90
+                        <br>E-Mail: info@vepatek.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="contact-form">
+                    <form id="contact" action="" method="get">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="İsminiz"
+                                        required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                        placeholder="E-Mail Adresiniz" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Mesajınız" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-button">Mesaj Gönder</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

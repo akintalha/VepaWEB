@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>VEPATEK Yazılım Danışmanlık Hizmetleri LTD ŞTİ</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logoMin.svg">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/datatables.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/datepicker.min.css">
+    <link rel="stylesheet" href="/assets/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/flickity.css">
+    <link rel="stylesheet" href="/assets/css/fullscreen.css">
+    <link href="/assets/css/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/Fp.js"></script>
+    <script type="text/javascript" src="/assets/js/datatables.js"></script>
+    <script src="/assets/js/datepicker.min.js"></script>
+    <script src="/assets/js/datepicker.en.js"></script>
+    <script src="/assets/js/select2.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/flickity.pkgd.min.js"></script>
+    <script src="/assets/js/fullscreen.js"></script>
+    {{!-- <script src="/assets/js/popper.js"></script> --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.2.8/js/dataTables.rowReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+    
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+</head>
+
+<body style="min-width: 1190px;" id="etkinlikbody">
+    <div id="MainBody">
+        
+       {{>leftmenu}}
+        <section class="home-section">
+            <div class="home-content">
+                {{>header}}
+                {{{body}}}
+            </div>
+        </section>
+    </div>
+    {{>footer}}
+
+
+
+    {{!--
+    <script>
+
+        var user = {{{ JSONuser }}}
+        var data = {{{ JSONdata }}}
+        if (!data) {
+
+        }
+        $(document).ready(function () {
+            $(".sepeticondivAdd").click(function () {
+
+                var sepeticon = $(".sepeticon");
+                var urunicın = $(this).parents('.bannercartitem');
+                if (urunicın) {
+
+                    var imgclone = urunicın.clone()
+                        .offset({
+                            top: urunicın.offset().top,
+                            left: urunicın.offset().left
+                        })
+                        .css({
+                            'opacity': '0.5',
+                            'position': 'absolute',
+                            'height': '150px',
+                            'width': '150px',
+                            'z-index': '100'
+                        })
+                        .appendTo($('body'))
+                        .animate({
+                            'top': sepeticon.offset().top + 10,
+                            'left': sepeticon.offset().left + 10,
+                            'width': 75,
+                            'height': 75
+                        }, 1000, 'easeInOutExpo');
+                }
+                setTimeout(function () {
+                    sepeticon.effect("shake", {
+                        times: 2
+                    }, 200);
+                }, 1500);
+
+                imgclone.animate({
+                    'width': 0,
+                    'height': 0
+                }, function () {
+                    $(this).detach()
+                });
+
+                var id = $(this).attr("data-id");
+                id = parseInt(id);
+                if (!isNaN(id)) {
+                    var sonuc = getcartid(data, $(this).attr("data-id"))
+                    sepeteklefunction(sonuc);
+                }
+            })
+
+            var href = window.location.pathname.split("/")[1];
+            //$(".leftmenuatags").children('a[href=/' + href + ']').hide();
+            if (href) {
+                $(".leftmenuatags").children('a[href="/' + href + '"]').children('li').css({ 'background-color': '#EDAA86', 'color': '#ffffff' });
+                $(".leftmenuatags").children('a[href="/' + href + '"]').children('li').children('img').css('filter', 'brightness(100)');
+            }
+
+            $(".tabmenuitem").click(function () {
+                $(".tabmenuitem").removeClass("activetabmenu");
+                $(this).addClass("activetabmenu");
+            })
+            $(".bannerdetailitemdivbutton").click(function () {
+
+                var data = {{{ JSONdata }
+            }}
+                sepeteklefunction(data.alldata);
+            })
+        })
+        Array.prototype.insert = function (index, item) {
+            this.splice(index, 0, item);
+        };
+        function sepeteklefunction(data) {
+
+            if (data != undefined) {
+                VEPAAJAX('sepeteekle', {
+                    LessonId: data.Id,
+                    LessonCode: data.LessonCode,
+                    price: data.LessonPrice,
+                    LessonName: data.LessonName,
+                    TeacherName: data.TeacherName,
+                    Mainprice: 99.00,
+                    Fingerprint: getCookie('fingerprint')
+                });
+            }
+        }
+        function getcartid(data, cartid) {
+            var result = [];
+            var resultend = [];
+            $.each(data, function (key, value) {
+                if (data[key][0] != undefined) {
+                    if (data[key][0].Id != undefined) {
+                        result = data[key].filter(Id => Id.Id == parseInt(cartid));
+                    }
+                }
+
+                if (result.length > 0) {
+                    resultend = result;
+                    return false;
+                }
+            });
+
+            return resultend[0];
+            //sepeteklefunction(resultend[0]);
+        }
+    </script>
+    <script>
+        window.dAL4M = {}
+        function isFunction(possibleFunction) {
+            return typeof (possibleFunction) === typeof (Function);
+        }
+        function VEPAAJAX(endpoint, data, CallBackFunctionName = '') {
+            var a = undefined;
+            if (data != undefined) {
+                a = JSON.stringify(data);
+            }
+            $.ajax({
+                type: 'POST',
+                data: a,
+                async: false,
+                contentType: 'application/json',
+                url: '{{settings.sourceAjaxUrl}}' + endpoint,
+                success: function (data) {
+                    var c = CallBackFunctionName == '' ? endpoint + '_After' : CallBackFunctionName;
+                    if (isFunction(window[c]) == true) {
+                        var name = window[c];
+                        name.call(this, data);
+                    }
+                },
+                error: function (data) {
+                    var c = CallBackFunctionName == '' ? endpoint + '_Error' : CallBackFunctionName;
+                    if (isFunction(window[c]) == true) {
+                        var name = window[c];
+                        name.call(this, data);
+                    }
+                }
+            });
+        }
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        function sepeteekle_After(data) {
+
+            $(".sepetsayi").children('span').text(parseInt($(".sepetsayi").children('span').text()) + 1);
+            $(".Bildivlist").append('<div class="sepetitem">' +
+                '<div class="row justify-content-md-center">' +
+                '<div class="col-3 col-sm-2 col-md-2 col-lg-12 col-xl-3">' +
+                '<img class="sepetitemimg" src="/assets/img/bgimg8.png" alt="">' +
+                '</div>' +
+                '<div class="col-4 col-sm-2 col-md-2 col-lg-12 col-xl-6">' +
+                '<h2 class="sepetitemh21">' + data.LessonName + '</h2>' +
+                '<h2 class="sepetitemh22">' + data.TeacherName + '</h2>' +
+                '<h2 class="sepetitemh23">' + formatDate(data.CreateDate) + '</h2>' +
+                '</div>' +
+                '<div class="col-5 col-sm-2 col-md-2 col-lg-12 col-xl-3"' +
+                'style="padding-top: 16px;padding-right: 9px;padding-left: 0px;">' +
+                '<h2 class="sepetitemh24">' + parseFloat(data.Mainprice).toFixed(2) + ' ₺</h2>' +
+                '<h2 class="sepetitemh25">' + parseFloat(data.price).toFixed(2) + ' ₺</h2>' +
+                '</div>' +
+                '</div>' +
+                '</div>')
+        }
+        function formatDate(date) {
+            if (date != "güncel") {
+                var d = new Date(date),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+                return [year, month, day].join('-');
+            }
+            else {
+                var d = new Date(),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+
+                return [year, month, day].join('-');
+            }
+
+        }
+        function formatDateDay(date) {
+            if (date != "güncel") {
+                var d = new Date(date),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+                return day
+            }
+            else {
+                var d = new Date(),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+
+                return day
+            }
+
+        }
+        function formatdatemonthYear(date) {
+            var b = "";
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                year = d.getFullYear()
+
+
+            month = parseInt(month);
+            switch (month) {
+                case 1: b = "ocak";
+                    break;
+                case 2: b = "şubat";
+                    break;
+                case 3: b = "mart";
+                    break;
+                case 4: b = "nisan";
+                    break;
+                case 5: b = "mayıs";
+                    break;
+                case 6: b = "haziran";
+                    break;
+                case 7: b = "temmuz";
+                    break;
+                case 8: b = "ağustos";
+                    break;
+                case 9: b = "eylül";
+                    break;
+                case 10: b = "ekim";
+                    break;
+                case 11: b = "kasım";
+                    break;
+                case 12: b = "aralık";
+                    break;
+            }
+            return [b, year].join(' ');
+        }
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function getParameterByName(name, url) {
+
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        var h = getParameterByName("update");
+        if (h) {
+            alert("kaydedildi");
+            window.location.href = window.location.pathname;
+        }
+    </script>
+    <script>
+        $.fn.clickToggle = function (func1, func2) {
+            var funcs = [func1, func2];
+            this.data('toggleclicked', 0);
+            this.click(function () {
+                var data = $(this).data();
+                var tc = data.toggleclicked;
+                $.proxy(funcs[tc], this)();
+                data.toggleclicked = (tc + 1) % 2;
+            });
+            return this;
+        };
+
+        $(document).ready(function () {
+            $(".tabmenuitem").click(function () {
+                $(".tabmenuitem").removeClass("activetabmenu");
+                $(this).addClass("activetabmenu");
+            })
+            $(".tabmenuitemeducator").click(function () {
+                $(".tabmenuitemeducator").removeClass("activetabmenueducator");
+                $(this).addClass("activetabmenueducator");
+            })
+            var click = 0;
+            $(".coursecontentdivitemimg2").clickToggle(function () {
+                $(this).parents(".coursecontentdivitem").css({ backgroundColor: '#dfdfdf40' })
+                $(this).parents(".coursecontentdivitem").stop().animate({ height: "188px", backgroundColor: "#dfdfdf!important" });
+            }, function () {
+                $(this).parents(".coursecontentdivitem").css({ backgroundColor: 'white' })
+                $(this).parents(".coursecontentdivitem").stop().animate({ height: "55px", backgroundColor: "white" });
+            });
+        })
+
+
+        /*  function opendetail(a) {
+             
+            var sonuc = getcartid(data,a);
+            if(sonuc){
+                
+            }
+            
+        }*/
+        $(document).on("click", ".bddbdet", function () {
+            var sonuc = getcartid(data, $(this).attr("data-id"));
+            if (sonuc) {
+                window.location = "/egitimdetaypage/" + sonuc.Id + ""
+            }
+        })
+        $(document).on("click", ".cartinfo a", function () {
+            var sonuc = getcartid(data, $(this).attr("data-id"));
+            if (sonuc) {
+                VEPAAJAX("egitimdetail", { Id: sonuc.Id });
+            }
+        })
+        $(document).on("click", ".bannercartitem", function (e) {
+
+
+
+            if (e.target.className != 'sepeticondivAdd' && e.target.className != 'fa fa-cart-arrow-down') {
+                var sonuc = getcartid(data, $(this).attr("data-id"));
+                if (sonuc) {
+                    VEPAAJAX("egitimdetail", { Id: sonuc.Id });
+                }
+            }
+
+        })
+
+
+
+        function egitimdetail_After(data) {
+
+            $(".bannerdetailitemdivtitle").text(data[0].LessonName)
+            $(".bannerdetailitemdivname").text(data[0].FirstName + " " + data[0].LastName);
+            $(".bannerdetailitemdivdesc").text(data[0].LessonDesc);
+            $(".bannerdetailitemdivcost").text(parseFloat(data[0].LessonPrice).toFixed(2) + " ₺");
+            $(".bddbdet").attr("data-id", "" + data[0].Id + "");
+
+            if (data[0].LessonIsCertificate == true) {
+                $(".Bitirmesertifikasi").show();
+            }
+            else {
+                $(".Bitirmesertifikasi").hide();
+            }
+            $(".educatorpagecartinfo .stars").empty();
+            for (var i = 0; i < data[0].LessonRate; i++) {
+                $(".educatorpagecartinfo .stars").append('<img src="/assets/img/paintedstar.png" alt="">')
+            }
+            for (var i = 0; i < (5 - data[0].LessonRate); i++) {
+                $(".educatorpagecartinfo .stars").append('<img src="/assets/img/unpaintedstar.png" alt="">')
+            }
+
+            if (data[0].LessonIsLive == true) {
+                $(".canlidersek").show();
+            }
+            else {
+                $(".canlidersek").hide();
+            }
+            $('#exampleModal').modal('show');
+        }
+        function getParameterByName(name, url) {
+
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        var h = getParameterByName("update");
+        var s = getParameterByName("save");
+        var e = getParameterByName("error");
+        var d = getParameterByName("delete");
+        if (h) {
+            /*Swal(
+                'güncelleme İşlemi Başarılı!',
+                'Devam Etmek İçin Butona Basın!',
+                'success',
+            ).then(function (result) {
+                if (result.value) {
+                    window.location.href = window.location.pathname;
+                }
+ 
+            });*/
+            //
+            //$('#hatayazisi').html(h);
+        }
+        if (s) {
+
+            swal({
+                title: "Başarılı",
+                text: "Devam Etmek İçin Tamam Tuşuna Basabilirsiniz. ",
+                icon: "success",
+                button: "Tamam",
+            }).then(function (result) {
+
+                if (result) {
+                    window.location.href = window.location.pathname;
+                }
+
+            });
+            //window.location.href = window.location.pathname;
+            //$('#hatayazisi').html(h);
+        }
+        if (e) {
+
+            swal({
+                title: "Hata",
+                text: "Devam Etmek İçin Tamam Tuşuna Basabilirsiniz. ",
+                icon: "error",
+                button: "Tamam",
+            }).then(function (result) {
+
+                if (result) {
+                    window.location.href = window.location.pathname;
+                }
+
+            });;
+            //window.location.href = window.location.pathname;
+            //$('#hatayazisi').html(h);
+        }
+        if (d) {
+            /*Swal({
+                'Silme İşlemi Başarılı!',
+                'Devam Etmek İçin Butona Basın!',
+                'success'
+            });*/
+            //$('#hatayazisi').html(h);
+        }
+    </script>
+    <script>
+
+        if (window.requestIdleCallback) {
+            requestIdleCallback(function () {
+                Fingerprint2.get(function (components) {
+                    var values = components.map(function (component) { return component.value })
+                    var murmur = Fingerprint2.x64hash128(values.join(''), 31)
+                    setCookie("fingerprint", murmur);
+                })
+            })
+        } else {
+            setTimeout(function () {
+                Fingerprint2.get(function (components) {
+                    var values = components.map(function (component) { return component.value })
+                    var murmur = Fingerprint2.x64hash128(values.join(''), 31)
+                    setCookie("fingerprint", murmur);
+                })
+            }, 500)
+        }
+    </script> --}}
+    <script>
+
+
+        var result = [];
+        $(window).scroll(function () {
+
+            var sticky = $('.navbar-expand-md'),
+                scroll = $(window).scrollTop();
+            if (scroll >= 100) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+            /*console.log(scroll);
+            console.log(distance);
+            if (scroll >= distance) {
+            }*/
+            //console.log(scroll);
+
+            if ($(window).width() < 767) {
+                result.sort((a, b) => {
+                    return Math.abs(scroll - a) - Math.abs(scroll - b);
+                })
+                console.log(result);
+                console.log($(".projectitemdiv[offsettop='" + result[1] + "']"));
+                $(".projectitemdiv[offsettop='" + result[1] + "']").find(".figcaptionblack").css("opacity", "0.0")
+                $(".projectitemdiv[offsettop='" + result[2] + "']").find(".figcaptionblack").css("opacity", "0.0")
+            }
+
+
+            //$(".projectitemdiv[offsettop='" + scroll + "']").hide();
+        });
+        $(document).ready(function () {
+            $(".projectitemdiv:eq(0)").find(".figcaptionblack").css("opacity", "0.0")
+            $.each($('.projectitemdiv'), function (key, value) {
+                $('.projectitemdiv:eq(' + key + ')').attr("offsettop", value.offsetTop);
+                result.push(value.offsetTop);
+            });
+            //var result = $(".projectitemdiv").filter(word => $(".projectitemdiv")[word].offsetTop);
+            //console.log(result);
+            if ($(window).width() < 1189) {
+                $(".dual-collapse2").removeClass("order-md-0");
+            }
+            else {
+                if (window.location.pathname != "/") {
+                    setTimeout(function () {
+                        //$(".stablenav-item").toggleClass("displaynone");
+                        $("#Changenav-item").css({
+                            "display": "block",
+                            "border-bottom": "3px solid white",
+                            "font-weight": "bold"
+                        })
+                        $("#Changenav-item").children('a').css("padding-bottom", "0")
+
+                        $("#slider").removeClass("slide-out");
+                        $("#closeicon").attr("src", "/assets/img/3-dots.svg");
+                        $("#Changenav-item").css("display", "block");
+                    }, 2000)
+                }
+
+                $(".dual-collapse2").addClass("order-md-0");
+            }
+        })
+        jQuery(window).resize(function () {
+
+            if ($(window).width() < 1189) {
+                $(".dual-collapse2").removeClass("order-md-0");
+            }
+            else {
+                if (window.location.pathname != "/") {
+                    setTimeout(function () {
+                        //$(".stablenav-item").toggleClass("displaynone");
+                        $("#Changenav-item").css({
+                            "display": "block",
+                            "border-bottom": "3px solid white",
+                            "font-weight": "bold"
+                        })
+                        $("#Changenav-item").children('a').css("padding-bottom", "0")
+
+                        $("#slider").removeClass("slide-out");
+                        $("#closeicon").attr("src", "/assets/img/3-dots.svg");
+                        $("#Changenav-item").css("display", "block");
+                    }, 2000)
+                }
+                $(".dual-collapse2").addClass("order-md-0");
+            }
+        });
+
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        function formatDate(date) {
+            if (date != "güncel") {
+                var d = new Date(date),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+                return [day, month, year].join('-');
+            }
+            else {
+                var d = new Date(),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+
+                return [day, month, year].join('-');
+            }
+
+        }
+
+        function formatDateTime(date) {
+            if (date != "güncel") {
+                var d = new Date(date),
+                    seconds = '' + (d.getSeconds()),
+                    hours = '' + (d.getHours()),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+                var result = [day, month, year].join('-');
+
+                return [result, [hours, seconds].join(':')].join(' ');
+            }
+            else {
+                var d = new Date(),
+                    seconds = '' + (d.getSeconds()),
+                    hours = '' + (d.getHours()),
+                    month = '' + (d.getMonth() + 1),
+                    day = '' + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2)
+                    month = '0' + month;
+                if (day.length < 2)
+                    day = '0' + day;
+
+                var result = [day, month, year].join('-');
+
+                result += ' ';
+
+                return [result, [hours, seconds].join(':')].join(' ');
+            }
+
+        }
+        function formatMoney(n) {
+            return parseFloat(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1.').replace(/\.(\d+)$/, ',$1');
+        }
+        function isFunction(possibleFunction) {
+            return typeof (possibleFunction) === typeof (Function);
+        }
+        var groupBy = function (xs, key) {
+            return xs.reduce(function (rv, x) {
+                (rv[x[key]] = rv[x[key]] || []).push(x);
+                return rv;
+            }, {});
+        };
+        function refreshcombodata() {
+            $.ajax({
+                url: "/refreshCombo",
+                type: 'GET',
+                success: function (data) {
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
+        }
+    </script>
+
+</body>
+
+</html>
